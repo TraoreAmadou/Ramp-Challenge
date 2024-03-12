@@ -1,24 +1,49 @@
-# Prédiction de la Consommation Énergétique des Bâtiments
+# RAMP starting-kit on Prediction of the energy consumption of buildings
+Prediction of the energy consumption of buildings
 
-## Description
-Ce projet vise à prédire la consommation énergétique des bâtiments en fonction de leurs caractéristiques physiques et des conditions météorologiques externes. L'objectif est de fournir un outil qui peut aider à mieux comprendre et optimiser la consommation d'énergie dans le secteur du bâtiment.
 
-## Contexte
-Les bâtiments représentent une part importante de la consommation énergétique mondiale. Une meilleure compréhension et prédiction de la consommation énergétique peuvent contribuer à des bâtiments plus écoénergétiques et à la réduction de l'empreinte carbone.
+Traore Amadou, Amiche Ines, Michel Doroch, Pierre Derathe, Nazim kazar, Nesrine Lagraa
 
-## Données
-Les données utilisées dans ce projet comprennent les caractéristiques des bâtiments (superficie, âge, type d'isolation, etc.) ainsi que des données météorologiques (température extérieure). Ces données ont été synthétisées pour les besoins de ce projet.
 
-## Méthodologie
-- **Prétraitement des données** : Nettoyage et préparation des données pour l'analyse et la modélisation.
-- **Exploration des données** : Analyse exploratoire pour comprendre les relations entre les caractéristiques des bâtiments, les conditions météorologiques et la consommation énergétique.
-- **Modélisation** : Utilisation de divers algorithmes de machine learning pour prédire la consommation énergétique.
-- **Évaluation** : Comparaison des modèles en fonction de leur performance et sélection du meilleur modèle.
+## Getting started
 
-## Technologies Utilisées
-- Python
-- Pandas, NumPy pour la manipulation des données
-- Scikit-learn pour la modélisation et l'évaluation
-- Matplotlib, Seaborn pour la visualisation des données
+### Install
 
-## Structure du Répertoire
+To run a submission and the notebook you will need the dependencies listed
+in `requirements.txt`. You can install install the dependencies with the
+following command-line:
+
+```bash
+pip install -U -r requirements.txt
+```
+
+If you are using `conda`, we provide an `environment.yml` file for similar
+usage.
+
+### Challenge description
+
+Get started with the [dedicated notebook](starting_kit.ipynb)
+
+
+### Test a submission
+
+The submissions need to be located in the `submissions` folder. For instance
+for `my_submission`, it should be located in `submissions/my_submission`.
+
+To run a specific submission, you can use the `ramp-test` command line:
+
+```bash
+ramp-test --submission my_submission
+```
+
+You can get more information regarding this command line:
+
+```bash
+ramp-test --help
+```
+
+### To go further
+
+You can find more information regarding `ramp-workflow` in the
+[dedicated documentation](https://paris-saclay-cds.github.io/ramp-docs/ramp-workflow/stable/using_kits.html)
+
