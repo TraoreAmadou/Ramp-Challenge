@@ -12,7 +12,7 @@ workflow = rw.workflows.Regressor()
 
 
 score_types = [
-    rw.score_types.RMSE(),
+    rw.score_types.MARE(),
     rw.score_types.RelativeRMSE(name='rel_rmse'),
     rw.score_types.NormalizedRMSE(name="Nrmse", precision=3)
 ]
@@ -28,6 +28,7 @@ def _get_data(path, f_name):
     data = data.dropna(subset=[_target_column_name])
     X = data.drop([_target_column_name], axis=1)
     X = X.drop(["Building_ID"], axis=1)
+
     y_array = data[_target_column_name]
     return X, y_array
 

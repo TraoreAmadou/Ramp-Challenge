@@ -12,8 +12,15 @@ class Regressor(BaseEstimator):
     def __init__(self):
         # Specify the categorical columns
         categorical_cols = ['Type', 'Heating_Type',
-                            'Insulation_Level', 'Windows_Type']
-        num_columns = ['Surface', 'Age', 'Outside_Temperature']
+                            'Insulation_Level', 'Windows_Type', 'Roof_Type',
+                            'Wall_Material', 'Elevator_Presence',
+                            'Basement_Presence', 'Energy_Rating',
+                            'LED_Lighting', 'Energy_Management_System']
+        
+        num_columns = ['Surface', 'Age', 'Outside_Temperature',
+                       'Number_of_Rooms',
+                       'Occupancy_Rate', 'Parking_Spaces', 'Residents_Count',
+                       'Distance_From_City_Center']
 
         # Pipeline pour les variables numériques
         self.numeric_transformer = Pipeline(
